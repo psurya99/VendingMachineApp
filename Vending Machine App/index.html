@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vending Machine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="myStyle.css">
+  <script type="text/javascript" src="app.js"></script>
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style="height:1500px">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Vending Machine</a></li>
+    
+    </ul>
+  </div>
+</nav>
+  
+<div class="container" style="  margin-top: 80px;
+border: 2px dotted #d5d8de;">
+
+
+  <h3>Products List</h3>
+  <div class="row">
+
+        <div class="col-md-4">
+
+
+ <div class="panel panel-default">
+ <div class="panel-body">
+
+        
+            <p>              
+            <button type="button"  class="btn-default btn-lg" >1. Coke (80c) </button>
+
+            <button type="button"  class="btn-default btn-lg">2. Pepsi (90 c)</button>
+           </p>
+
+            <p>
+            <button type="button"  class=" btn-default btn-lg">3. Sprite ($1.20)</button>
+            <button type="button" class="btn-default btn-lg">4. 7 Up ($1)</button>
+            </p>
+
+
+ <p>
+            <button type="button"  class="btn-default btn-lg">5. Limca ($1.50)</button>
+            <button type="button"  class="btn-default btn-lg">6.Fanta ($2) </button>
+ </p>
+
+</div>
+    </div>
+        </div>
+
+    
+
+    <div class="col-md-4">
+        
+         <h3>Insert Coin</h3>
+
+
+         <input type="button"  class="btn btn-primary" value="1" onclick="insertCoin(1)"></input>
+         <input type="button"  class="btn btn-primary" value="2" onclick="insertCoin(2)"></input>
+
+         <input type="button" class="btn btn-primary" value="3" onclick="insertCoin(3)"></input>
+
+         </p>
+         <p>
+                <input type="button"  class="btn btn-primary" value="4" onclick="insertCoin(4)"></input>
+
+         <input type="button" class="btn btn-primary" value="5" onclick="insertCoin(5)"></input>
+         <input type="button" class="btn btn-primary" value="6" onclick="insertCoin(6)"></input>
+
+
+         </p>
+
+         <p>
+                <!-- <input type="text"  class="form-control" readonly value=" " id="amount"> -->
+
+               Inserted Coin: <input type="text"  readonly name="enter" class="enter" value="" id="lolz"/>
+
+                <!-- <input type="button" class="btn btn-primary" onclick="dispenseChange()" value="Change"> -->
+        </p>
+
+        <p>
+               Product Status:  <input type="text" readonly value="" id="stat">
+                </p>
+            </div>           
+  
+            
+
+
+    <div class="col-md-4">
+
+        <h4>Choose the Product from Product List</h4>
+
+        <input type="button" class="btn btn-info"  value="1" onclick="selectSlot(0)"></input>
+        <input type="button" class="btn btn-info"  value="2" onclick="selectSlot(1)"></input>
+        <input type="button"  class="btn btn-info" value="3" onclick="selectSlot(2)"></input>
+        </p>
+        <p>
+        <input type="button"  class="btn btn-info" value="4" onclick="selectSlot(3)"></input>
+        <input type="button"  class="btn btn-info" value="5" onclick="selectSlot(4)"></input>
+        <input type="button"  class="btn btn-info" value="6" onclick="selectSlot(5)"></input>
+        </p>
+        <p>
+        <input type="button"  class="btn btn-info" value="7" onclick="selectSlot(6)"></input>
+        <input type="button"  class="btn btn-info" value="8" onclick="selectSlot(7)"></input>
+        <input type="button"  class="btn btn-info" value="9" onclick="selectSlot(8)"></input>
+        </p>
+        <p>
+        <input type="button" value="0" style="visibility: hidden;"></input>
+        <input type="button"   class="btn btn-info" value="0" onclick="selectSlot(9)"></input>
+        </p>
+
+    
+
+
+
+     </div> 
+
+    </div>
+    
+  </div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var lolz = $('#lolz');
+        var kk = $('#kk');
+        kk.click(function() {
+            alert(lolz.val());
+        });
+    });
+</script>
+
+
+</body>
+</html>
+
+
+

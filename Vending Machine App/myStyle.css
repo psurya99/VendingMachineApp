@@ -1,0 +1,31 @@
+body{
+    
+    background-color: #2affb0 !important;
+    margin: 0;
+    font-family: Arial;
+}
+
+.hide{
+    display:none;
+  }
+  .show{
+    display:block;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
